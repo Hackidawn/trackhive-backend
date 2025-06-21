@@ -21,8 +21,8 @@ app.use(express.json());
 
 // ✅ Dynamic CORS config to allow both local & deployed frontend
 const allowedOrigins = [
-  process.env.CLIENT_URL,          // e.g. https://trackhive-frontend.vercel.app
-  "http://localhost:5173"          // Local dev
+  "https://trackhive-frontend.vercel.app",  // ✅ your actual Vercel URL
+  "http://localhost:5173"
 ];
 
 app.use(cors({
